@@ -12,7 +12,7 @@ export default function Home() {
    
   useEffect(()=>{
     const fetchData = async () =>{
-      const response = await fetch('http://localhost:4000/')
+      const response = await fetch('http://localhost:4000/api/')
       const result = await response.json()
       setData(result)
       setLoading(false)
