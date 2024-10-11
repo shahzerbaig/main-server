@@ -9,10 +9,11 @@ interface DataType {
 export default function Home() {
   const [data, setData] = useState<DataType | null>(null);
   const [loading, setLoading] = useState(true);
-   
+  
+  const domain = "https://159.89.173.118/api/" 
   useEffect(()=>{
     const fetchData = async () =>{
-      const response = await fetch('http://localhost:4000/api/')
+      const response = await fetch(domain)
       const result = await response.json()
       setData(result)
       setLoading(false)
