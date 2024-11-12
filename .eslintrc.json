@@ -3,7 +3,7 @@
   "plugins": ["prettier"],
   "rules": {
     "semi": ["error", "always"],
-    "quotes": ["erro", "always"],
+    "quotes": ["error", "double"],
     "prettier/prettier": ["error"]
   }
 }
