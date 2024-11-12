@@ -14,7 +14,7 @@ const geistMono = localFont({
 
 export const metadata: Metadata = {
   title: "Digi Trader",
-  description: "Be a Digital Trader.",
+  description: "Be a Digital Trader",
   viewport: {
     width: "device-width",
     initialScale: 1,
