@@ -1,9 +1,7 @@
 {
-  "extends": ["next/core-web-vitals", "next/typescript", "prettier"],
-  "plugins": ["prettier"],
+  "extends": "next",
   "rules": {
-    "semi": ["error", "always"],
-    "quotes": ["error", "double"],
-    "prettier/prettier": ["error"]
+    "react/no-unescaped-entities": "off",
+    "@next/next/no-page-custom-font": "off"
   }
 }
