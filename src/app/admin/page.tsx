@@ -1,6 +1,7 @@
-'use client';
-import React, { useState, useEffect } from 'react';
-import { usePathname, useSearchParams } from 'next/navigation';
+"use client";
+import React, { useState, useEffect, Suspense } from "react";
+
+
 
 type UserType = {
     id: string,
@@ -18,8 +19,6 @@ type TradeType = {
 }
 
 const Admin = () => {
-  const pathname = usePathname();
-  const searchParams = useSearchParams();
   const [activeTab, setActiveTab] = useState<'trades' | 'users'>('trades');
   const [drawerOpen, setDrawerOpen] = useState(false);
   const [tradesData, setTradesData] = useState<TradeType []>([]);
@@ -55,7 +54,7 @@ const Admin = () => {
     };
 
     fetchData();
-  }, [pathname, searchParams]);
+  }, []);
 
   const handleErrorDialogClose = () => {
     setErrorDialogOpen(false);
