@@ -34,7 +34,7 @@ const Admin = () => {
         setLoading(true);
         
         
-        const response = await fetch('http://159.89.173.118/admin/');
+        const response = await fetch('http://159.89.173.118/api/admin/');
         if (!response.ok) {
           throw new Error('Failed to fetch data from the API');
         }
