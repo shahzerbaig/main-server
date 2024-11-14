@@ -4,11 +4,7 @@ import { useState } from "react";
 import { useRouter } from "next/navigation";
 
 
-// Move viewport configuration here
-export const viewport = {
-  width: "device-width",
-  initialScale: 1,
-};
+
 export default function SignIn() {
   const router = useRouter();
 

@@ -15,10 +15,11 @@ const geistMono = localFont({
 export const metadata: Metadata = {
   title: "Digi Trader",
   description: "Be a Digital Trader",
-  viewport: {
-    width: "device-width",
-    initialScale: 1,
-  },
+  // viewport: {
+  //   width: "device-width",
+  //   initialScale: 1,
+  // },
+  
   icons: {
     icon: [
       { url: "/favicon-16x16.png", sizes: "16x16" },
