@@ -56,7 +56,7 @@ const StockTradingForm = () => {
       };
       // 'http://159.89.173.118/api'
       
-      const response = await fetch('http://159.89.173.118/api/trade/', { // Update the endpoint URL
+      const response = await fetch('https://159.89.173.118/api/trade/', { // Update the endpoint URL
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
